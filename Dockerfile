@@ -1,6 +1,6 @@
-ARG IMAGE_TAG=v3.1.8
-
 FROM node:21 AS NODE_BUILD
+
+ARG IMAGE_TAG=v3.1.8
 
 WORKDIR /go/src/github.com/siyuan-community/siyuan/
 
