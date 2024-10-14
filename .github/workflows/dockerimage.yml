@@ -48,8 +48,8 @@ jobs:
           context: .
           platforms: linux/amd64
           push: true
-          build-args:
-            - IMAGE_TAG=${{ github.event.inputs.image_tag }}
+          build-args: |
+            IMAGE_TAG=${{ github.event.inputs.image_tag }}
           tags: |
             ghcr.io/${{ github.repository }}:${{ github.event.inputs.image_tag }}
             ghcr.io/${{ github.repository }}:latest
