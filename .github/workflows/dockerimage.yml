@@ -17,14 +17,14 @@ jobs:
       contents: read
 
     steps:
-    - name: Validate input
-      run: |
-        if [ -z "$IMAGE_TAG" ]; then
-          echo "Error: image_tag cannot be empty"
-          exit 1
-        fi
-      env:
-        IMAGE_TAG: ${{ github.event.inputs.image_tag }}
+      - name: Validate input
+        run: |
+          if [ -z "$IMAGE_TAG" ]; then
+            echo "Error: image_tag cannot be empty"
+            exit 1
+          fi
+        env:
+          IMAGE_TAG: ${{ github.event.inputs.image_tag }}
 
       - name: Checkout repository and submodules
         uses: actions/checkout@v4
