@@ -1,6 +1,6 @@
 # Siyuan
 
-base on [siyuan-community/siyuan](github.com/siyuan-community/siyuan)
+base on [siyuan-community/siyuan](https://github.com/siyuan-community/siyuan)
 
 ## Usage
 
