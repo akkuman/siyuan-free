@@ -1,4 +1,5 @@
-name: Release Docker Image ${{ github.event.inputs.image_tag }}
+# https://stackoverflow.com/a/78200584
+run-name: "Release Docker Image ${{ github.event.inputs.image_tag }}"
 
 on:
   workflow_dispatch:
